@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>STICKY MENU</title>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="/Images/JS_logo-removebg-preview.png" alt="">
+    </div>
+    <div id="navbar">
+        <li>Home</li>
+        <li>About</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact</li>
+    </div>
+    <div id="container">
+        <h1>ABOUT US</h1>
+        <div class="img">
+            <img src="/Images/javascript.img" alt="">
+        </div>
+        <p>JavaScript is a popular programming language used for creating interactive and dynamic web pages. It is a
+            high-level, interpreted language that can be executed on the client-side or server-side. JavaScript has
+            become an essential part of web development, and its versatility and flexibility have made it one of the
+            most widely used programming languages in the world.
+
+            JavaScript was initially created in 1995 by Brendan Eich, a programmer at Netscape. It was designed to be a
+            lightweight scripting language that could run in web browsers, providing a way for developers to add
+            interactivity to their websites. Over time, JavaScript evolved to include new features and capabilities, and
+            it became a full-fledged programming language that could be used for a wide range of web development tasks.
+        </p>
+        <p>One of the key strengths of JavaScript is its versatility. It can be used for a variety of purposes, from
+            creating complex web applications to building simple scripts that automate repetitive tasks. JavaScript can
+            be used on the client-side to add interactivity to web pages, such as form validation, animations, and
+            dynamic content. It can also be used on the server-side to build full-stack web applications, such as
+            e-commerce sites, social networks, and content management systems.JavaScript is an interpreted language,
+            which means that it does not need to be compiled before it can be run. This makes it easy to write and test
+            code quickly, without the need for complex build systems. JavaScript is also a dynamically typed language,
+            which means that data types are inferred at runtime, making it flexible and adaptable.
+        </p>
+        <p>JavaScript is a popular programming language used for creating interactive and dynamic web pages. It is a
+            high-level, interpreted language that can be executed on the client-side or server-side. JavaScript has
+            become an essential part of web development, and its versatility and flexibility have made it one of the
+            most widely used programming languages in the world.
+
+            JavaScript was initially created in 1995 by Brendan Eich, a programmer at Netscape. It was designed to be a
+            lightweight scripting language that could run in web browsers, providing a way for developers to add
+            interactivity to their websites. Over time, JavaScript evolved to include new features and capabilities, and
+            it became a full-fledged programming language that could be used for a wide range of web development tasks.
+        </p>
+    </div>
+    <script>
+         window.addEventListener('scroll',function(){
+           let navbar = document.getElementById("navbar");
+
+         if (window.pageYOffset >=225) {
+             navbar.classList.add('sticky');
+         }
+         else{
+            navbar.classList.remove('sticky');
+         }
+        });
+    </script>
+</body>
+
+</html>
