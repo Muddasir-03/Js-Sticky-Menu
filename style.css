@@ -74,7 +74,7 @@ p{
 }
 @media(max-width:400px){
     #navbar li{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 @media(max-width:750px){
